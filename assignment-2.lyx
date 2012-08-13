@@ -119,9 +119,9 @@ on of reactants.
  reverse reaction, this kinetic equation is as follows
 \begin_inset Formula 
 \begin{eqnarray*}
-\dot{x}=\frac{dx}{dt} & = & k_{1}ax\text{–}k_{-1}x^{2}\text{–}k_{2}bx\\
- & = & \left(k_{1}a\text{–}k_{2}b\right)x\text{–}k_{-1}x^{2}\\
- & = & c_{1}x\text{–}c_{2}x^{2}
+\dot{x}=\frac{dx}{dt} & = & k_{1}ax-k_{-1}x^{2}-k_{2}bx\\
+ & = & \left(k_{1}a-k_{2}b\right)x-k_{-1}x^{2}\\
+ & = & c_{1}x-c_{2}x^{2}
 \end{eqnarray*}
 
 \end_inset
@@ -191,7 +191,7 @@ We are interested in the fixed points of this system.
 :
 \begin_inset Formula 
 \[
-\frac{d\dot{x}}{dx}=c_{1}\text{–}2c_{2}x
+\frac{d\dot{x}}{dx}=c_{1}-2c_{2}x
 \]
 
 \end_inset
@@ -281,7 +281,7 @@ Regarding the bifurcation diagram, consider the equation
 \end_inset
 
 where 
-\begin_inset Formula $r=c_{1}=k_{1}a–k_{2}b$
+\begin_inset Formula $r=c_{1}=k_{1}a-k_{2}b$
 \end_inset
 
 .
@@ -293,7 +293,7 @@ As
 \end_inset
 
  has been considered, let us focus on 
-\begin_inset Formula $r–c_{2}x=0\implies x=\frac{r}{c_{2}}$
+\begin_inset Formula $r-c_{2}x=0\implies x_{*_{2}}=\frac{r}{c_{2}}$
 \end_inset
 
 .
@@ -311,19 +311,19 @@ As
 \end_inset
 
  at 
-\begin_inset Formula $x_{*}=\frac{r}{c_{2}}$
+\begin_inset Formula $x_{*_{2}}=\frac{r}{c_{2}}$
 \end_inset
 
 :
 \begin_inset Formula 
 \[
-\frac{d\dot{x}}{dx}=r\text{–}2c_{2}x_{*}=r\text{–}2r=-r
+\frac{d\dot{x}}{dx}=r-2c_{2}x_{*_{2}}=r-2r=-r
 \]
 
 \end_inset
 
  The fixed point at 
-\begin_inset Formula $x_{*}=\frac{r}{c_{2}}$
+\begin_inset Formula $x_{*_{2}}=\frac{r}{c_{2}}$
 \end_inset
 
  is attracting if 
@@ -335,81 +335,91 @@ As
 \end_inset
 
 .
- The bifurcation diagram will look something like this:
-\begin_inset Note Note
-status open
+ A sample bifurcation diagram is shown in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Bifurcation-diagram-q1"
+
+\end_inset
+
+.
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
 
 \begin_layout Plain Layout
-do we need a bifurcation diagram?
+\align center
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Bifurcation diagram of 
+\begin_inset Formula $\dot{x}=rx-c_{2}x^{2}$
+\end_inset
+
+ with 
+\begin_inset Formula $c_{2}=2$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Bifurcation-diagram-q1"
+
+\end_inset
+
+ 
 \end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename q1-bifurcation.eps
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-2.2 I’m not 100% sure on a), but I’d say that, regarding f= N/(A + N); As
- N-> infinity, f -> 1 As N -> zero, f -> 0 As 1 is full saturation, a half
- saturated system would thus has f = ½.
- This happens when N = A f = A/2A = ½.
- A is therefore the half saturation level, which is the halfway point between
- an extinct population and one that cannot grow anymore.
+\begin_layout Plain Layout
+
 \end_layout
 
-\begin_layout Standard
-b) N[DOT] = rN(1 – N/K) – H * N/(A + N) let N = 
-\backslash
-alpha x N[DOT] = 
-\backslash
-alpha x[DOT] 
-\backslash
-alpha x[DOT] = 
-\backslash
-alpha rx(1 – 
-\backslash
-alpha x/K) – H * 
-\backslash
-alpha x/(A+
-\backslash
-alpha x) set 
-\backslash
-alpha = K x[DOT] = rx(1 – x) –H* x/(A + Kx) let t = 
-\backslash
-beta
-\backslash
-tau dx/d
-\backslash
-tau = dx/dt * dt/d
-\backslash
-tau dx/d
-\backslash
-tau = 
-\backslash
-beta x[DOT] x[DOT] = 1/(
-\backslash
-beta) dx/d
-\backslash
-tau dx/d
-\backslash
-tau = 
-\backslash
-beta rx(1 – x) – 
-\backslash
-beta H*x/(A + Kx) set 
-\backslash
-beta = 1/r dx/d
-\backslash
-tau = x(1 – x) – H/r *x/(A + Kx) Now consider H/r * x/(A + Kx) By dividing
- through the entire fraction by K, we get H/Kr * x/(A/K + x) So, dx/d
-\backslash
-tau = x(1 – x) – h * x/(a + x) where h = H/Kr and a = A/K This is dimensionally
- appropriate as [H] = fish/time, [A] = fish, and from our calculation of
- 
-\backslash
-tau, [r] = t-1 and from the initial equation, as [N] = fish, [K] = fish
- as well.
- Thus we have dimensional compatibility and our quantities are dimensionless.
+\end_inset
+
+ From this bifurcation diagram we can see that for 
+\begin_inset Formula $r<0$
+\end_inset
+
+, 
+\begin_inset Formula $X$
+\end_inset
+
+ is being destroyed faster it is being created and the concentration is
+ stable at 
+\begin_inset Formula $x=0$
+\end_inset
+
+.
+ At 
+\begin_inset Formula $r=0$
+\end_inset
+
+ a transcritical bifurcation occurs.
+ The fixed point 
+\begin_inset Formula $x_{*}=0$
+\end_inset
+
+ exchanges stability with the fixed point at 
+\begin_inset Formula $x_{*_{2}}=\frac{r}{c_{2}}$
+\end_inset
+
+ and the concentration of 
+\begin_inset Formula $X$
+\end_inset
+
+ will tend to this equilibrium instead.
 \end_layout
 
 \begin_layout Section*
@@ -417,12 +427,40 @@ Question 2
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-do biological interpretation and nondimensionalisation
+but I’d say that, regarding f= N/(A + N); As N-> infinity, f -> 1 As N ->
+ zero, f -> 0 As 1 is full saturation, a half saturated system would thus
+ has f = ½.
+ This happens when N = A f = A/2A = ½.
+ A is therefore the half saturation level, which is the halfway point between
+ an extinct population and one that cannot grow anymore.
 \end_layout
+
+\begin_layout Standard
+We want to nondimensionalise the system 
+\begin_inset Formula 
+\begin{equation}
+\dot{N}=rN(1-N/K)-H\frac{N}{A+N}\label{eq:dimension-system}
+\end{equation}
+
+\end_inset
+
+Let 
+\begin_inset Formula $N=\alpha x$
+\end_inset
+
+.
+ Substituting this into (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:dimension-system"
+
+\end_inset
+
+), we get the following:
+\begin_inset Formula 
+\[
+\alpha\frac{dx}{d\tau}=\alpha rx\left(1-\frac{\alpha x}{K}\right)-H\frac{\alpha x}{A+\alpha x}
+\]
 
 \end_inset
 
@@ -430,16 +468,111 @@ do biological interpretation and nondimensionalisation
 \end_layout
 
 \begin_layout Standard
+Setting 
+\begin_inset Formula $\alpha=K$
+\end_inset
+
+:
 \begin_inset Formula 
 \[
-\dot{x}=\frac{dx}{d\tau}=x\left(1-x\right)-\frac{hx}{a+x}
+\frac{dx}{d\tau}=rx\left(1-x\right)-H\frac{x}{A+Kx}
 \]
 
 \end_inset
 
- We want to find and analyse the fixed points of this system.
+
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $t=\beta\tau$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\frac{dx}{d\tau}=\beta rx\left(1-x\right)-\beta H\frac{x}{A+Kx}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Setting 
+\begin_inset Formula $\beta=\frac{1}{r}$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{dx}{d\tau} & = & x\left(1-x\right)-\frac{H}{r}\frac{x}{A+Kx}\\
+ & = & x\left(1-x\right)-\frac{H}{rK}\frac{x}{\frac{A}{K}+x}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Set 
+\begin_inset Formula $h=\frac{H}{rK}$
+\end_inset
+
+ and 
+\begin_inset Formula $a=\frac{A}{K}$
+\end_inset
+
+ to obtain the required nondimensionalised equation:
+\begin_inset Formula 
+\begin{equation}
+\dot{x}=x\left(1-x\right)-\frac{hx}{a+x}\label{eq:dimensionless}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This is dimensionally appropriate as 
+\begin_inset Formula $\left[H\right]=\frac{\mathrm{fish}}{\mathrm{time}}$
+\end_inset
+
+, 
+\begin_inset Formula $\left[A\right]=\mathrm{fish}$
+\end_inset
+
+, and from our calculation of 
+\begin_inset Formula $\tau$
+\end_inset
+
+, 
+\begin_inset Formula $\left[r\right]=\mathrm{time}^{-1}$
+\end_inset
+
+ and from the initial equation, as 
+\begin_inset Formula $\left[N\right]=\left[K\right]=\mathrm{fish}$
+\end_inset
+
+ as well.
+ Thus we have dimensional compatibility and our quantities are dimensionless.
+\end_layout
+
+\begin_layout Standard
+We want to find and analyse the fixed points of the system described by
+ (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:dimensionless"
+
+\end_inset
+
+).
  To find the fixed points, we set 
-\begin_inset Formula $\frac{dx}{d\tau}=0$
+\begin_inset Formula $\dot{x}=0$
 \end_inset
 
 :
@@ -512,6 +645,16 @@ When
 \end_inset
 
 .
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Is this enough to guarantee bifurcation?
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -676,6 +819,21 @@ reference "eq:other-root"
 \end_layout
 
 \begin_layout Standard
+We would like to analyse the stability of these additional fixed points.
+ For the moment, we will assume that there are two distinct non-zero roots
+ to (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:other-root"
+
+\end_inset
+
+).
+ We will see later that if this is not the case, there is a bifurcation.
+ 
+\end_layout
+
+\begin_layout Standard
 Geometrically, solutions to (
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -738,7 +896,91 @@ status open
 
 , it can never intersect the lower half of the hyperbola.
  We then only need to consider the intersections with the upper half.
- There are 3 possibilities:
+\end_layout
+
+\begin_layout Standard
+To analyse the stability of these fixed points, we look at the sign of 
+\begin_inset Formula $\dot{x}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $x>0$
+\end_inset
+
+ and 
+\begin_inset Formula $1-x>\frac{h}{a+x}$
+\end_inset
+
+, 
+\begin_inset Formula $\dot{x}>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $x>0$
+\end_inset
+
+ and 
+\begin_inset Formula $1-x<\frac{h}{a+x}$
+\end_inset
+
+, 
+\begin_inset Formula $\dot{x}<0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $x<0$
+\end_inset
+
+ and 
+\begin_inset Formula $1-x>\frac{h}{a+x}$
+\end_inset
+
+, 
+\begin_inset Formula $\dot{x}<0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $x<0$
+\end_inset
+
+ and 
+\begin_inset Formula $1-x<\frac{h}{a+x}$
+\end_inset
+
+, 
+\begin_inset Formula $\dot{x}>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+There are three cases to consider depending on the signs of the fixed points:
+\end_layout
+
+\begin_layout Enumerate
+Both additional fixed points occur at 
+\begin_inset Formula $x<0$
+\end_inset
+
+.
+ This case is shown in figure ???.
 \end_layout
 
 \end_body
