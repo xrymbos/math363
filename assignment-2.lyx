@@ -1,0 +1,676 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+MATH363 Assignment 2
+\end_layout
+
+\begin_layout Author
+John Davies and Jamie McCloskey
+\end_layout
+
+\begin_layout Section*
+Question 1
+\end_layout
+
+\begin_layout Standard
+Consider the following chemical reaction system: 
+\begin_inset Formula 
+\begin{eqnarray*}
+A+X & \ce{<=>[k_{1}][k_{-1}]} & 2X\\
+X+B & \ce{->[k_{2}]} & C
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+changed top of first eqn to k_1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In an equilibrium reaction all constants of equilibrium, in this case the
+ 
+\begin_inset Formula $2$
+\end_inset
+
+ for 
+\begin_inset Formula $2X$
+\end_inset
+
+, become exponents in the equation for the kinetics of 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ By the law of mass action, the reaction rate is proportional to the concentrati
+on of reactants.
+ As 
+\begin_inset Formula $X$
+\end_inset
+
+ is both being produced by reaction 1, and lost through reaction 2 and the
+ reverse reaction, this kinetic equation is as follows
+\begin_inset Formula 
+\begin{eqnarray*}
+\dot{x}=\frac{dx}{dt} & = & k_{1}ax\text{–}k_{-1}x^{2}\text{–}k_{2}bx\\
+ & = & \left(k_{1}a\text{–}k_{2}b\right)x\text{–}k_{-1}x^{2}\\
+ & = & c_{1}x\text{–}c_{2}x^{2}
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+DO WE NEED TO SAY THAT IT”S FAIR TO MAKE THESE CONSTANTS?
+\end_layout
+
+\end_inset
+
+ If we assume that the concentractions of 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ are large enough that they are not changing much, we can treat 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ as constants.
+ Therefore we can treat 
+\begin_inset Formula $c_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $c_{2}$
+\end_inset
+
+ as constants.
+\end_layout
+
+\begin_layout Standard
+We are interested in the fixed points of this system.
+ Clearly 
+\begin_inset Formula $x_{*}=0$
+\end_inset
+
+ is a fixed point.
+ Let us consider the derivative of 
+\begin_inset Formula $\frac{dx}{dt}$
+\end_inset
+
+ with respect to 
+\begin_inset Formula $x$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\frac{d\dot{x}}{dx}=c_{1}\text{–}2c_{2}x
+\]
+
+\end_inset
+
+ At 
+\begin_inset Formula $x_{*}=0$
+\end_inset
+
+, 
+\begin_inset Formula $\frac{d\dot{x}}{dx}=c_{1}=k_{1}a-k_{2}b$
+\end_inset
+
+.
+ The fixed point at 
+\begin_inset Formula $x_{*}=0$
+\end_inset
+
+ is attracting if 
+\begin_inset Formula $c_{1}<0\iff k_{2}b>k_{1}a$
+\end_inset
+
+.
+ It is repelling if 
+\begin_inset Formula $c_{1}>0\iff k_{2}b<k_{1}a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Regarding the bifurcation diagram, consider the equation 
+\begin_inset Formula 
+\[
+\frac{dx}{dt}=rx-c_{2}x^{2}=x\left(r-c_{2}x\right)
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $r=c_{1}=k_{1}a–k_{2}b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+As 
+\begin_inset Formula $x_{*}=0$
+\end_inset
+
+ has been considered, let us focus on 
+\begin_inset Formula $r–c_{2}x=0\implies x=\frac{r}{c_{2}}$
+\end_inset
+
+.
+ As we must be producing C for the system to exist, we can assume 
+\begin_inset Formula $c_{2}\neq0$
+\end_inset
+
+.
+ Let us consider the derivative of 
+\begin_inset Formula $\frac{dx}{dt}$
+\end_inset
+
+ with respect to 
+\begin_inset Formula $x$
+\end_inset
+
+ at 
+\begin_inset Formula $x_{*}=\frac{r}{c_{2}}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\frac{d\dot{x}}{dx}=r\text{–}2c_{2}x_{*}=r\text{–}2r=-r
+\]
+
+\end_inset
+
+ The fixed point at 
+\begin_inset Formula $x_{*}=\frac{r}{c_{2}}$
+\end_inset
+
+ is attracting if 
+\begin_inset Formula $r>0$
+\end_inset
+
+ and repelling if 
+\begin_inset Formula $r<0$
+\end_inset
+
+.
+ The bifurcation diagram is as follows:
+\end_layout
+
+\begin_layout Standard
+2.2 I’m not 100% sure on a), but I’d say that, regarding f= N/(A + N); As
+ N-> infinity, f -> 1 As N -> zero, f -> 0 As 1 is full saturation, a half
+ saturated system would thus has f = ½.
+ This happens when N = A f = A/2A = ½.
+ A is therefore the half saturation level, which is the halfway point between
+ an extinct population and one that cannot grow anymore.
+\end_layout
+
+\begin_layout Standard
+b) N[DOT] = rN(1 – N/K) – H * N/(A + N) let N = 
+\backslash
+alpha x N[DOT] = 
+\backslash
+alpha x[DOT] 
+\backslash
+alpha x[DOT] = 
+\backslash
+alpha rx(1 – 
+\backslash
+alpha x/K) – H * 
+\backslash
+alpha x/(A+
+\backslash
+alpha x) set 
+\backslash
+alpha = K x[DOT] = rx(1 – x) –H* x/(A + Kx) let t = 
+\backslash
+beta
+\backslash
+tau dx/d
+\backslash
+tau = dx/dt * dt/d
+\backslash
+tau dx/d
+\backslash
+tau = 
+\backslash
+beta x[DOT] x[DOT] = 1/(
+\backslash
+beta) dx/d
+\backslash
+tau dx/d
+\backslash
+tau = 
+\backslash
+beta rx(1 – x) – 
+\backslash
+beta H*x/(A + Kx) set 
+\backslash
+beta = 1/r dx/d
+\backslash
+tau = x(1 – x) – H/r *x/(A + Kx) Now consider H/r * x/(A + Kx) By dividing
+ through the entire fraction by K, we get H/Kr * x/(A/K + x) So, dx/d
+\backslash
+tau = x(1 – x) – h * x/(a + x) where h = H/Kr and a = A/K This is dimensionally
+ appropriate as [H] = fish/time, [A] = fish, and from our calculation of
+ 
+\backslash
+tau, [r] = t-1 and from the initial equation, as [N] = fish, [K] = fish
+ as well.
+ Thus we have dimensional compatibility and our quantities are dimensionless.
+\end_layout
+
+\begin_layout Section*
+Question 2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+do biological interpretation and nondimensionalisation
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\dot{x}=\frac{dx}{d\tau}=x\left(1-x\right)-\frac{hx}{a+x}
+\]
+
+\end_inset
+
+ We want to find and analyse the fixed points of this system.
+ To find the fixed points, we set 
+\begin_inset Formula $\frac{dx}{d\tau}=0$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+x\left(1-x\right)-\frac{hx}{a+x} & = & 0\\
+x\left(1-x-\frac{h}{a+x}\right) & = & 0
+\end{eqnarray*}
+
+\end_inset
+
+ We can see that 
+\begin_inset Formula $x_{*_{1}}=0$
+\end_inset
+
+ is a fixed point.
+ The stability of 
+\begin_inset Formula $x_{*_{1}}$
+\end_inset
+
+ can be found by inspecting the derivative: 
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{d\dot{x}}{dx} & = & 1-2x-\frac{ha}{\left(a+x\right)^{2}}\\
+\left.\frac{d\dot{x}}{dx}\right|_{x=0} & = & 1-\frac{ha}{a^{2}}\\
+\left.\frac{d\dot{x}}{dx}\right|_{x=0} & = & 1-\frac{h}{a}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+From this, we can see that 
+\begin_inset Formula $x=0$
+\end_inset
+
+ is attracting if 
+\begin_inset Formula $h>a$
+\end_inset
+
+ and repelling if 
+\begin_inset Formula $h<a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+When 
+\begin_inset Formula $h=a$
+\end_inset
+
+, the derivative is 
+\begin_inset Formula $0$
+\end_inset
+
+ at 
+\begin_inset Formula $x=0$
+\end_inset
+
+.
+ As we are at a fixed point and the spatial derivative is 
+\begin_inset Formula $0$
+\end_inset
+
+, a bifurcation will occur when 
+\begin_inset Formula $h=a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The other fixed points will satisfy
+\begin_inset Formula 
+\begin{eqnarray}
+1-x-\frac{h}{a+x} & = & 0\nonumber \\
+1-x & = & \frac{h}{a+x}\label{eq:other-root}
+\end{eqnarray}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Algebraically, the solutions to (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:other-root"
+
+\end_inset
+
+) are given by the following expression:
+\begin_inset Formula 
+\[
+x=\frac{1}{2}\left(\pm\sqrt{a^{2}+2a-4h+1}-a+1\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There are three cases:
+\end_layout
+
+\begin_layout Enumerate
+If 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $a^{2}+2a-4h+1<0$
+\end_inset
+
+, there are no real solutions to 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:other-root"
+
+\end_inset
+
+) and 
+\begin_inset Formula $x=0$
+\end_inset
+
+ is the only fixed point of the system.
+\end_layout
+
+\begin_layout Enumerate
+If 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $a^{2}+2a-4h+1=0$
+\end_inset
+
+, there is one solution to 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:other-root"
+
+\end_inset
+
+).
+ If this solution is non-zero, there is an additional fixed point.
+\end_layout
+
+\begin_layout Enumerate
+If 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $a^{2}+2a-4h+1>0$
+\end_inset
+
+, there are two solutions to 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:other-root"
+
+\end_inset
+
+).
+ If both of these solutions are non-zero, there are two additional fixed
+ points.
+ Otherwise, there is a single additional fixed point.
+\end_layout
+
+\begin_layout Standard
+Geometrically, solutions to (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:other-root"
+
+\end_inset
+
+) correspond to the intersections of the line 
+\begin_inset Formula $x_{*}=1-x$
+\end_inset
+
+ with the hyperbola 
+\begin_inset Formula $x_{*}=\frac{h}{a+x}$
+\end_inset
+
+.
+ This hyperbola has an asymptote at 
+\begin_inset Formula $x=-a$
+\end_inset
+
+.
+ As 
+\begin_inset Formula $a>0$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $\geq?$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+, this asymptote will always occur at a negative 
+\begin_inset Formula $x$
+\end_inset
+
+ value.
+ Furthermore, as 
+\begin_inset Formula $h>0$
+\end_inset
+
+, the hyperbola will be negative for 
+\begin_inset Formula $x<-a$
+\end_inset
+
+.
+ Because 
+\begin_inset Formula $1-x$
+\end_inset
+
+ is positive for all 
+\begin_inset Formula $x<0$
+\end_inset
+
+, it can never intersect the lower half of the hyperbola.
+ We then only need to consider the intersections with the upper half.
+ There are 3 possibilities:
+\end_layout
+
+\end_body
+\end_document
