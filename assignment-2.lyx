@@ -131,11 +131,20 @@ on of reactants.
 status open
 
 \begin_layout Plain Layout
-DO WE NEED TO SAY THAT IT”S FAIR TO MAKE THESE CONSTANTS?
+DO WE NEED TO SAY THAT IT”S FAIR TO MAKE THESE CONSTANTS? added explanation
 \end_layout
 
 \end_inset
 
+ with 
+\begin_inset Formula $c_{1}=k_{1}a-k_{2}b$
+\end_inset
+
+ and 
+\begin_inset Formula $c_{2}=k_{-1}$
+\end_inset
+
+.
  If we assume that the concentractions of 
 \begin_inset Formula $A$
 \end_inset
@@ -210,6 +219,56 @@ We are interested in the fixed points of this system.
 \end_inset
 
 .
+ This makes sense chemically: near 
+\begin_inset Formula $x=0$
+\end_inset
+
+ the backwards reaction is very small compared to the other two reactions.
+ 
+\begin_inset Formula $X$
+\end_inset
+
+ is being created from the forward reaction at rate 
+\begin_inset Formula $k_{1}a$
+\end_inset
+
+ and is being converted to 
+\begin_inset Formula $C$
+\end_inset
+
+ at rate 
+\begin_inset Formula $k_{2}b$
+\end_inset
+
+.
+ When 
+\begin_inset Formula $k_{2}b>k_{1}a$
+\end_inset
+
+, 
+\begin_inset Formula $X$
+\end_inset
+
+ is being converted faster than it is being created and so 
+\begin_inset Formula $x$
+\end_inset
+
+ tends to 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+check explanation with john
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -276,7 +335,17 @@ As
 \end_inset
 
 .
- The bifurcation diagram is as follows:
+ The bifurcation diagram will look something like this:
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+do we need a bifurcation diagram?
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
